@@ -34,6 +34,7 @@
 .font-15{
     font-size: 15px;
 }
+
 .font-open-sans{
     font-family: 'Open Sans', sans-serif;
 }
@@ -43,7 +44,7 @@
 }
 .grid{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
     align-items: center;
 }
 .d-flex{
@@ -54,6 +55,7 @@
     height: auto;
     max-width: 59px;
 }
+
 .navigation li {
     list-style-type: none;
     padding: 10px 24px;
@@ -69,6 +71,7 @@
     font-weight: 500;
     
 }
+
 .color-1{
     background-color: #3c219b;
 }
@@ -87,13 +90,14 @@
 section.banner{
     background-image: url('http://ingenioushubs.com/Napp-app-landing/images/Home_Page_shape.png');
     width: 100%;
-    height: 800px;
+    height: 850px;
     position: relative;
     margin-top: -80px;
-    padding : 200px
+    padding : 200px;
+    background-repeat: no-repeat;
 }
 .banner-heading{
-    width: 81%;
+    width: 100%;
 }
 h1.heading-bold {
     font-weight: 400;
@@ -103,7 +107,8 @@ span.heading-norm {
     font-weight: 200;
 }
 .item-1{
-    width: 50%;
+    /* width: 50%; */
+    position: relative;
 }
 .banner-icon{
     background-color: #fff;
@@ -134,3 +139,143 @@ h5.icon-heading {
 .icon-box {
     position: relative;
 }
+.nav-mobile {
+    display: none;
+}
+img.mobile-img {
+    position: absolute;
+    left: 66%;
+    top: -69px;
+    animation: movebounce 3.9s linear infinite;
+}
+.grid-1{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.banner-heading {
+    width: 100%;
+    padding-top: 20px;
+}
+h1.site-h1::after {
+    content: "About";
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 80px;
+    z-index: -1;
+    position: absolute;
+    transform: translateX(-115px);
+    color: #ddd;
+    top: -36px;
+    left: 50%;
+}
+
+.text-center{
+    text-align: center;
+}
+section.about-us{
+    position: relative;
+}
+.item-2{
+    width: 50%;
+    position: relative;
+}
+.color-4{
+  color: #444444;
+}
+.color-5{
+    color: #222;
+}
+p.about-desc {
+    margin: 23px 0;
+    line-height: 26px;
+}
+h1.counter-num {
+    font-size: 20px;
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    text-align: center;
+}
+h1.counter-text{
+    font-size: 20px;
+    font-family: 'Ubuntu';
+    font-weight: 500;
+    text-align: center;
+    line-height: 37px;
+}
+.counter-wrapper {
+    margin-top: 65px;
+}
+.about-img-wrapper{
+    text-align: center;
+}
+.about-img-wrapper::after {
+    content: "";
+    width: 459px;
+    background: url("http://ingenioushubs.com/Napp-app-landing/images/about-screenshort.png");
+    position: absolute;
+    top: 0;
+    display: inline-block;
+    height: 473px;
+    background-repeat: no-repeat;
+    top: 78px;
+    left: 282px;
+    z-index: -1;
+}
+.about-img-wrapper::before {
+    content: "";
+    background: url("http://ingenioushubs.com/Napp-app-landing/images/dots.png");
+    position: absolute;
+    width: 495px;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    left: -87px;
+    background-size: auto;
+    z-index: -1;
+    top: -106px;
+}
+.about-content {
+    padding: 200px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes movebounce {
+    0% {
+      transform: translateY(0px); }
+    50% {
+      transform: translateY(20px); }
+    100% {
+      transform: translateY(0px); } }
+  @keyframes moveleftbounce {
+    0% {
+      transform: translateX(-10px); }
+    50% {
+      transform: translateX(30px); }
+    100% {
+      transform: translateX(-10px); }
+     }
+  

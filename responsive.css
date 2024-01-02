@@ -1,6 +1,25 @@
 @media (max-width:425px) {
     section.banner{
-        margin-top: -142px;
+        margin-top: -201px;
     }
-   
+    .nav-mobile {
+        display: block;
+    }
+    .contact-buttons{
+        display: none;
+    }
+    .grid {
+        grid-template-columns: auto;
+    }
+    .banner-heading {
+        width: 100%;
+        font-size: 15px;
+    }
+    section.banner {
+        padding: 200px 5px;
+    }
+    .d-flex{
+        flex-direction: column;
+    }
+    header > {}
 }
