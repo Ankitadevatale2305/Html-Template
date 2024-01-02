@@ -1,28 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Template Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <!---Font-awesome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
     <section>
         <div class="container">
-           <div class="header">
-            <div class="brand">
-                <img src="./img/02_Download_Popup.png" alt="">
+            <div class="header grid">
+                <div class="brand">
+                    <img src="./img/header-logo.png" alt="" class="img-fluid">
+                </div>
+                <div class="navigation d-flex font-16 font-ubntu">
+                    <li><a href="#"></a>Home</li>
+                    <li><a href="#"></a>About</li>
+                    <li><a href="#"></a>Our Features</li>
+                    <li><a href="#"></a>Feedbacks</li>
+                    <li><a href="#"></a>FAQ</li>
+                    <li><a href="#"></a>Contact</li>
+                </div>
+                <div class="contact-buttons">
+                    <button class="btn sign-up font-20 color-2">Sign Up</button>
+                    <button class="btn login color-1 font-20">Login</button>
+                </div>
             </div>
-            <div class="navigation">
-                <li><a href=""></a>Home</li>
-                <li><a href=""></a>About</li>
-                <li><a href=""></a>Our Features</li>
-                <li><a href=""></a>Feedbacks</li>
-                <li><a href=""></a>FAQ</li>
-                <li><a href=""></a>Contact</li>
+        </div>
+    </section>
+    <section class="banner">
+        <div class="container">
+            <div class="heading-main d-flex">
+                <div class="item-1">
+                    <div class="banner-heading font-46 font-ubntu color-3">
+                        <h1 class="heading-bold">Be Your Life <span class="heading-norm">Become Easiest</span> <span
+                                class="heading-bold">With NAPP</span></h1>
+                    </div>
+
+                    <div class="icon-box d-flex">
+                            <div class="box-apple">
+                                <i class="fa fa-apple banner-icon" style="font-size:34px"></i>
+                                <h5 class="icon-heading font-15 color-3">ios</h5>
+                            </div>
+                            <div class="box-android">
+                                <i class="fa fa-android banner-icon"  style="font-size:34px"></i>
+                                <h5 class="icon-heading font-15 color-3">Android</h5>
+                            </div>
+                    </div>
+                </div>
+                <div class="item-2"></div>
             </div>
-            <div class="contact-buttons"></div>
-           </div>
         </div>
     </section>
 </body>
+
 </html>
