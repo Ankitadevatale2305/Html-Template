@@ -9,8 +9,15 @@
     <link rel="stylesheet" href="responsive.css">
     <script src="app.js"></script>
 
+
     <!---Font-awesome link-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!----Slider links------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/easing/EasePack.min.js"></script>
 </head>
 
 <body>
@@ -73,7 +80,7 @@
     <section class="about-us">
         <div class="container">
             <div class="site-heading text-center">
-                <h1 class="site-h1 font-32 font-ubntu">About Npp</h1>
+                <h1 class="site-h1-1 font-32 font-ubntu">About Npp</h1>
             </div>
        
         <div class="about-content d-flex">
@@ -106,12 +113,54 @@
                 </div>
             </div>
             <div class="item-2">
+                <div class="about-icon play-icon">
+                    <i class="fa fa-play"></i>
+                </div>
                 <div class="about-img-wrapper">
                     <img src="./img/about-ss-with-phone.png" alt="" class="about-img">
                 </div>
+               
             </div>
         </div>
     </div>
+    </section>
+
+    <section class="Features">
+        <div class="container">
+            <div class="site-heading text-center">
+                <h1 class="site-h1-2 font-32 font-ubntu">Npp Features</h1>
+            </div>
+          
+            <ul class="tabs">
+                <li class="tab-link current" data-tab="1"> 1
+                    <p>Lorem ipsum dolor sit amet, consecteturisicing elitd do eiusmod tempor incididunt ut labore et dolore agna aliqua. Ut enim ad minim niam, quis nostrud rcitation.</p>
+                </li>
+                <li class="tab-link" data-tab="2">2</li>
+                <li class="tab-link" data-tab="3">3</li>
+                <li class="tab-link" data-tab="4">4</li>
+                <li class="tab-link" data-tab="5">5</li>
+
+            </ul>
+
+            <div id="1" class="tab-content" >
+                <img src="./img/feature-screenshort-1.png" alt="">
+            </div>
+            <div id="2" class="tab-content">
+                <img src="" alt="">
+            </div>
+            <div id="3" class="tab-content">
+                <img src="
+                " alt="">
+            </div>
+            <div id="4" class="tab-content">
+                <img src="
+                " alt="">
+            </div>
+            <div id="5" class="tab-content">
+                <img src="
+                " alt="">
+            </div>
+        </div>
     </section>
 </body>
 

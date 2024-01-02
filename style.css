@@ -156,7 +156,7 @@ img.mobile-img {
     width: 100%;
     padding-top: 20px;
 }
-h1.site-h1::after {
+h1.site-h1-1::after {
     content: "About";
     font-family: 'Ubuntu';
     font-weight: 400;
@@ -167,6 +167,18 @@ h1.site-h1::after {
     color: #ddd;
     top: -36px;
     left: 50%;
+}
+h1.site-h1-2::after {
+    content: "Features";
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 80px;
+    z-index: -1;
+    position: absolute;
+    transform: translateX(-115px);
+    color: #ddd;
+    top: -36px;
+    left: 47%;
 }
 
 .text-center{
@@ -207,6 +219,7 @@ h1.counter-text{
 }
 .about-img-wrapper{
     text-align: center;
+    animation: movebounce 3.9s linear infinite;
 }
 .about-img-wrapper::after {
     content: "";
@@ -229,20 +242,46 @@ h1.counter-text{
     height: 100%;
     background-repeat: no-repeat;
     background-position: top;
-    left: -87px;
+    left: 22px;
     background-size: auto;
     z-index: -1;
-    top: -106px;
+    top: -81px;
 }
 .about-content {
     padding: 200px 0;
 }
+.about-icon {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    color: #ffff;
+    padding: 16px 17px 13px 21px;
+    background:linear-gradient(to left, #e6a2ee 0%, #794fc5 100%);
+    border-radius: 50%;
+    font-size: 23px;
+    cursor: pointer;
+   z-index: 2;
+}
 
-
-
-
-
-
+.about-icon::after {
+    content: " ";
+    position: absolute;
+    top: -378px;
+    border: 2px solid transparent;
+    left: -62px;
+    width: 270px;
+    height: 200px;
+    z-index: -1;
+    border-image: linear-gradient(to right, #e6a2ee 0%, #3e229c 100%);
+    border-image-slice: 1;
+    z-index: 1;
+}
+section.Features{
+    position: relative;
+}
+ul.tabs {
+    list-style-type: none;
+}
 
 
 
@@ -270,7 +309,8 @@ h1.counter-text{
       transform: translateY(20px); }
     100% {
       transform: translateY(0px); } }
-  @keyframes moveleftbounce {
+  
+      @keyframes moveleftbounce {
     0% {
       transform: translateX(-10px); }
     50% {
