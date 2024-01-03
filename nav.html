@@ -23,5 +23,38 @@
             </nav>
         </div>
     </section>
+
+    <script>
+        $(document).ready(function(){
+            function slider(){
+                var tab_id = $(li.current).attr('data-tab');
+
+                var n_tab_id = parseInt(tab_id) + 1   
+                if(n_tab_id == 5){
+                    n_tab_id = 1;
+                }
+            $('ul.tabs li').removeClass('current');
+            $('.tab-content').removeClass('current');
+            $("ul").find("[data-tab='" + n_tab_id + "']").addClass('current');
+            $("#" + n_tab_id).addClass('current');
+            }
+            var myTimer = setInterval(slider , 1000);
+            $('ul.tabs li').click(function(){
+                var tab_id = $(this).attr('data-tab');
+
+            $('ul.tabs li').removeClass('current');
+            $('tab-content').removeClass('current');
+
+            $(this).addClass('current');
+            $("#"+tab_id).addClass('current');
+            })
+            $('.container').mouseover(function(){
+                clearInterval(myTimer);
+            })
+            $('.container').mouseout(function(){
+                myTimer = setInterval(slider , 3000);
+            })
+        })
+    </script>
 </body>
 </html>

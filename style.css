@@ -318,4 +318,11 @@ ul.tabs {
     100% {
       transform: translateX(-10px); }
      }
-  
+  .container-1{
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: #4a4a4a;
+  }
+  ul.tabs li:hover{
+    background-color: pink;
+  }
